@@ -1,0 +1,30 @@
+{
+    "name": "estahn/guzzle-stereo-bundle",
+    "type": "library",
+    "description": "",
+    "keywords": ["guzzle", "mock", "phpunit"],
+    "homepage": "https://github.com/estahn/guzzle-stereo-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Enrico Stahn",
+            "email": "enrico.stahn@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "ikwattro/guzzle-stereo": "^1.2",
+        "symfony/dependency-injection": "~2.3|~3.0",
+        "symfony/config": "~2.3|~3.0",
+        "symfony/http-kernel": "~2.3|~3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "EnricoStahn\\Bundle\\GuzzleStereoBundle": ""
+        }
+    }
+}

@@ -1,0 +1,27 @@
+parameters:
+    guzzle_stereo.recorder_directory: "%kernel.logs_dir%"
+    guzzle_stereo.tape_name: "test"
+    guzzle_stereo.tape_name_type: REQUEST
+
+services:
+
+    guzzle_stereo_bundle.middleware.recorder:
+      class: Ikwattro\GuzzleStereo\Recorder
+      factory: [Ikwattro\GuzzleStereo\RecorderMiddleware, record]
+      arguments: ['@guzzle_stereo_bundle.recorder']
+
+    guzzle_stereo_bundle.tape:
+      class: Ikwattro\GuzzleStereo\Record\Tape
+      arguments: ['%guzzle_stereo.tape_name%']
+
+    guzzle_stereo_bundle.recorder:
+      class: Ikwattro\GuzzleStereo\Recorder
+      arguments: ['%guzzle_stereo.recorder_directory%']
+      calls:
+        - [addTape, ["@guzzle_stereo_bundle.tape"]]
+
+    guzzle_stereo_bundle.kernel_finish_request_listener:
+        class: EnricoStahn\Bundle\GuzzleStereoBundle\EventListener\RecorderDumperListener
+        arguments: ["@guzzle_stereo_bundle.recorder"]
+        tags:
+            - { name: kernel.event_listener, event: kernel.finish_request }
