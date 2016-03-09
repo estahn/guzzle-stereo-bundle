@@ -7,6 +7,10 @@
 [![Build Status](https://travis-ci.org/estahn/guzzle-stereo-bundle.png?branch=master)](https://travis-ci.org/estahn/guzzle-stereo-bundle)
 [![StyleCI](https://styleci.io/repos/53498097/shield)](https://styleci.io/repos/53498097)
 
+The GuzzleStereoBundle provides integration of the [guzzle-stereo](https://github.com/ikwattro/guzzle-stereo) library into the Symfony2 framework.
+
+GuzzleStereoBundle automatically hooks `guzzle-stereo` into Guzzle which then records all requests made through Guzzle.
+The goal is to reduce the effort to create mocks for external requests.
 
 Installation
 ============
