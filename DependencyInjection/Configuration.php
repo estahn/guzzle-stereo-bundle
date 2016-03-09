@@ -1,6 +1,6 @@
 <?php
 
-namespace Flamingo\Bundle\GuzzleStereoBundle\DependencyInjection;
+namespace EnricoStahn\Bundle\GuzzleStereoBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
