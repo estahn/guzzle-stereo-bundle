@@ -9,6 +9,11 @@
 
 The `GuzzleStereoBundle` provides integration of the [guzzle-stereo](https://github.com/ikwattro/guzzle-stereo) library into the Symfony2 framework.
 
+Features include:
+* Automatic recording of all outgoing requests through Guzzle
+* Replay recorded requests in functional tests
+* Copy & paste of file with last recorded requests
+
 `GuzzleStereoBundle` automatically hooks `guzzle-stereo` into Guzzle which then records all requests made through Guzzle.
 The goal is to reduce the effort to create mocks for external requests.
 
