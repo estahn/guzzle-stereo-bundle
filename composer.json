@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "EnricoStahn\\Bundle\\GuzzleStereoBundle": ""
+            "EnricoStahn\\Bundle\\GuzzleStereoBundle\\": ""
         }
     }
 }
