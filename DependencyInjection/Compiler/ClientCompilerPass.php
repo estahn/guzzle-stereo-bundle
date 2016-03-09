@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of the guzzle-stereo-bundle package.
+ *
+ * (c) Enrico Stahn <enrico.stahn@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace EnricoStahn\Bundle\GuzzleStereoBundle\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
