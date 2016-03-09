@@ -13,7 +13,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=5.6.0",
         "ikwattro/guzzle-stereo": "^1.2",
         "symfony/dependency-injection": "~2.3|~3.0",
         "symfony/config": "~2.3|~3.0",
