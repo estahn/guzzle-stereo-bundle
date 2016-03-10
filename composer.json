@@ -1,7 +1,7 @@
 {
     "name": "estahn/guzzle-stereo-bundle",
     "type": "library",
-    "description": "",
+    "description": "Record and Replay HTTP Responses easily in Symfony",
     "keywords": ["guzzle", "mock", "phpunit"],
     "homepage": "https://github.com/estahn/guzzle-stereo-bundle",
     "license": "MIT",
