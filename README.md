@@ -69,3 +69,9 @@ The goal is to reduce the effort to create mocks for external requests.
 ## Usage
 
 Refresh your page and find the created file in `app/logs/record_<tape name>.json`.
+
+## Badge Mania
+[![Build Status](https://scrutinizer-ci.com/g/estahn/guzzle-stereo-bundle/badges/build.png?b=master)](https://scrutinizer-ci.com/g/estahn/guzzle-stereo-bundle/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/estahn/guzzle-stereo-bundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/estahn/guzzle-stereo-bundle/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/estahn/guzzle-stereo-bundle/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/estahn/guzzle-stereo-bundle/?branch=master)
+[![Codacy Badge](https://api.codacy.com/project/badge/grade/41e45a52a1594fa1831bd620d6cca026)](https://www.codacy.com/app/estahn/guzzle-stereo-bundle)
