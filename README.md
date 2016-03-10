@@ -65,3 +65,7 @@ The goal is to reduce the effort to create mocks for external requests.
     # app/config/config_test.yml
     guzzle_stereo: ~
     ```
+
+## Usage
+
+Refresh your page and find the created file in `app/logs/record_<tape name>.json`.

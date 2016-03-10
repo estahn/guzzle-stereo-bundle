@@ -26,7 +26,7 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-                ->scalarNode('log_dir')->defaultValue('%kernel.logs_dir%/guzzle_stereo/')->end()
+                ->scalarNode('log_dir')->defaultValue('%kernel.logs_dir%')->end()
             ->end();
 
         return $treeBuilder;
