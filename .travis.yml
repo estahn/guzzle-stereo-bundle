@@ -14,7 +14,6 @@ matrix:
 before_script:
     - travis_retry composer self-update
     - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-source
-    - sudo pip install codecov
 
 script:
     - phpunit --coverage-text
@@ -23,4 +22,4 @@ after_script:
   - php vendor/bin/codacycoverage clover build/logs/clover.xml
   - wget https://scrutinizer-ci.com/ocular.phar
   - php ocular.phar code-coverage:upload --format=php-clover build/logs/clover.xml
-  - codecov
+  - bash <(curl -s https://codecov.io/bash) -f build/logs/clover.xml
